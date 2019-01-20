@@ -15,7 +15,7 @@ side branchPositions[NUM_BRANCHES];
 
 int main()
 {
-	RenderWindow window(VideoMode (1920, 1080), "Timber!!!", Style::Fullscreen);
+	RenderWindow window(VideoMode (1920, 1080), "AXEMAN", Style::Fullscreen);
 
 	Texture textureBackground1;
 	textureBackground1.loadFromFile("graphics/background.png");

@@ -5,17 +5,16 @@
 using namespace sf;
 
 void updateBranches(int seed);
-
 const int NUM_BRANCHES = 6;
 Sprite branches[NUM_BRANCHES];
 
-enum class side { LEFT, RIGHT, NONE };
+enum class side { LEFT, RIGHT, NONE }
 side branchPositions[NUM_BRANCHES];
 
 
 int main()
 {
-	RenderWindow window(VideoMode (1920, 1080), "AXEMAN", Style::Fullscreen);
+	RenderWindow window(VideoMode (1920, 1080), "Axeman", Style::Fullscreen);
 
 	Texture textureBackground1;
 	textureBackground1.loadFromFile("graphics/background.png");
@@ -187,7 +186,7 @@ int main()
 
 	bool acceptInput = false;
 
-	SoundBuffer chopBuffer;
+	/*SoundBuffer chopBuffer;
 	chopBuffer.loadFromFile("sound/chop.wav");
 	Sound chop;
 	chop.setBuffer(chopBuffer);
@@ -200,7 +199,7 @@ int main()
 	SoundBuffer ootBuffer;
 	ootBuffer.loadFromFile("sound/out_of_time.wav");
 	Sound outOfTime;
-	outOfTime.setBuffer(ootBuffer);
+	outOfTime.setBuffer(ootBuffer);*/
 
 	while (window.isOpen())
 	{
@@ -417,7 +416,7 @@ int main()
 
 				acceptInput = false;
 
-				chop.play();
+				///chop.play();
 
 			}
 
@@ -591,7 +590,7 @@ int main()
 
 				acceptInput = false;
 
-				chop.play();
+				///chop.play();
 
 			}
 
@@ -619,7 +618,7 @@ int main()
 
 				messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
 
-				outOfTime.play();
+				///outOfTime.play();
 
 
 			}
@@ -847,7 +846,7 @@ int main()
 
 				messageText.setPosition(1920 / 2.0f, 1080 / 2.0f);
 
-				death.play();
+				///death.play();
 			}
 
 

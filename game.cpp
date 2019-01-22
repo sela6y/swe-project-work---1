@@ -114,7 +114,7 @@ int main()
 	highscoreText.setCharacterSize(100);
 	highscoreText.setPosition(1200, 20);
 
-	messageText.setString(" Use left arrow to chop the tree from left side \nUse right arrow to chop the tree from right side\n            Avoid being hit by branch\n              Cut all trees in time\n              Press Enter to start!\n            Press ESC anytime to QUIT");
+	messageText.setString(" Use left arrow to chop the tree from left side \nUse right arrow to chop the tree from right side\n            Avoid being hit by branch\n              Cut all trees in time\n              Press Space to start!\n            Press Return/Enter anytime to QUIT");
 	scoreText.setString("Score = 0");
 
 	messageText.setCharacterSize(50);
@@ -217,12 +217,12 @@ int main()
 
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Escape))
+		if (Keyboard::isKeyPressed(Keyboard::Return))
 		{
 			window.close();
 		}
 
-		if (Keyboard::isKeyPressed(Keyboard::Return))
+		if (Keyboard::isKeyPressed(Keyboard::Space))
 		{
 			paused = false;
 

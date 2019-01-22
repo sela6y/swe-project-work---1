@@ -8,7 +8,7 @@ void updateBranches(int seed);
 const int NUM_BRANCHES = 6;
 Sprite branches[NUM_BRANCHES];
 
-enum class side { LEFT, RIGHT, NONE }
+enum class side { LEFT, RIGHT, NONE };
 side branchPositions[NUM_BRANCHES];
 
 
